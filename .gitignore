@@ -1,0 +1,5 @@
+# Original camera photos (large, contain EXIF metadata) - the site uses cropped copies in portfolio/assets/img
+IMG_*
+*.webp
+# Source resume PDFs - copies the site needs live inside portfolio/
+/*.pdf
