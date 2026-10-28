@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" data-theme="light">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -8,74 +8,160 @@
 <meta property="og:title" content="Meji A G — Software Engineer">
 <meta property="og:description" content="Meji A G builds web and mobile apps with React, Flutter, Python, REST APIs and PostgreSQL.">
 <meta property="og:image" content="../assets/img/meji.jpg">
+<meta name="theme-color" content="#0b1b36">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;600&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="../assets/style.css">
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/styles.css">
 </head>
-<body data-role="swe">
-<div class="page">
-
-<header class="top">
-  <a class="name" href="../">Meji A G</a>
-  <nav><a href="#about">About</a><a href="#stack">Stack</a><a href="#projects">Projects</a><a href="#work">Work</a><a href="#education">Education</a><a href="#contact">Contact</a><a class="cv" href="Meji_A_G_Software_Engineer_Resume.pdf" download>Resume (PDF)</a></nav>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="nav" id="top">
+  <div class="container nav-inner">
+    <a class="brand" href="../"><span class="brand-mark">M</span>Meji A G</a>
+    <nav aria-label="Primary">
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#stack">Stack</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#work">Work</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="nav-actions">
+      <button class="icon-btn" id="theme-toggle" type="button" aria-label="Switch to dark mode">
+        <svg class="sun" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 7a5 5 0 1 0 0 10 5 5 0 0 0 0-10zM2 13h2a1 1 0 0 0 0-2H2a1 1 0 0 0 0 2zm18 0h2a1 1 0 0 0 0-2h-2a1 1 0 0 0 0 2zM11 2v2a1 1 0 0 0 2 0V2a1 1 0 0 0-2 0zm0 18v2a1 1 0 0 0 2 0v-2a1 1 0 0 0-2 0zM5.99 4.58a1 1 0 0 0-1.41 1.41l1.06 1.06a1 1 0 0 0 1.41-1.41L5.99 4.58zm12.37 12.37a1 1 0 0 0-1.41 1.41l1.06 1.06a1 1 0 0 0 1.41-1.41l-1.06-1.06zm1.06-10.96a1 1 0 0 0-1.41-1.41l-1.06 1.06a1 1 0 0 0 1.41 1.41l1.06-1.06zM7.05 18.36a1 1 0 0 0-1.41-1.41l-1.06 1.06a1 1 0 0 0 1.41 1.41l1.06-1.06z"/></svg>
+        <svg class="moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3a9 9 0 1 0 9 9c0-.46-.04-.92-.1-1.36a5.39 5.39 0 0 1-4.4 2.26 5.4 5.4 0 0 1-3.14-9.8c-.44-.06-.9-.1-1.36-.1z"/></svg>
+      </button>
+      <button class="icon-btn menu-btn" id="menu-btn" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="nav-links">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+      </button>
+    </div>
+  </div>
 </header>
-
-<section class="intro">
-  <figure>
-    <img src="../assets/img/meji.jpg" alt="Meji A G smiling, standing outdoors by a river" width="960" height="1200">
-  </figure>
-  <div>
-    <div class="role-line">Software Engineer</div>
-    <h1>Meji <i>A&nbsp;G</i></h1>
-    <p class="say">I build web and mobile apps, and I teach the data structures and databases <i>underneath them</i>.</p>
-    <p class="plain">Computer Science postgraduate looking for an entry-level software engineering role. React, Flutter, Python, REST APIs and PostgreSQL.</p>
-    <div class="links">
-      <a class="solid" href="Meji_A_G_Software_Engineer_Resume.pdf" download>Download resume</a>
-      <a href="mailto:mejigeorge2002@gmail.com">Email</a>
-      <a href="https://www.linkedin.com/in/meji-a-g-a272aa200/" target="_blank" rel="noopener">LinkedIn</a>
+<main id="main">
+<section class="hero">
+  <div class="container hero-grid">
+    <div class="hero-copy">
+      <nav class="role-switch" aria-label="Portfolios">
+        <a href="../">All</a>
+        <a href="../teaching/">Teaching</a>
+        <a href="../qa/">QA</a>
+        <a class="is-current" href="./" aria-current="page">Software</a>
+      </nav>
+      <p class="availability"><span class="pulse" aria-hidden="true"></span>Software Engineer</p>
+      <h1>Meji A G<br><span>Engineering solutions.</span></h1>
+      <p class="hero-sub">I build web and mobile apps, and I teach the data structures and databases underneath them. Looking for an entry-level software engineering role. React, Flutter, Python, REST APIs and PostgreSQL.</p>
+      <div class="hero-ctas">
+        <a class="btn btn-primary" href="Meji_A_G_Software_Engineer_Resume.pdf" download>Download resume</a>
+        <a class="btn btn-outline" href="mailto:mejigeorge2002@gmail.com">Email</a>
+        <a class="btn btn-text" href="https://www.linkedin.com/in/meji-a-g-a272aa200/" target="_blank" rel="noopener">LinkedIn &rarr;</a>
+      </div>
+    </div>
+    <div class="hero-photo">
+      <div class="photo-frame"><img src="../assets/img/meji.jpg" alt="Portrait of Meji A G" width="960" height="1200"></div>
+      <div class="photo-card"><strong>Meji A G</strong><span>React · Flutter · Python</span></div>
     </div>
   </div>
 </section>
 
-<section class="row" id="about">
-  <h2>About</h2>
-  <div class="body">
-      <p class="lede">I enjoy the whole journey of an app: the screen someone taps, the API call behind it, and the data it ends up in.</p>
-      <p>I've built a Flutter mobile app and two React web apps. I also teach Data Structures, DBMS and Python as an Assistant Professor, so I spend a lot of time reading other people's code and explaining why one solution is cleaner than another.</p></div>
-</section>
-
-<section class="row" id="stack">
-  <h2>Stack</h2>
-  <div class="body"><dl class="skills"><dt>Web</dt><dd>React, JavaScript, HTML, CSS</dd><dt>Mobile</dt><dd>Flutter, Dart</dd><dt>Backend &amp; data</dt><dd>REST APIs, Firebase Authentication, PostgreSQL, SQL, Hive</dd><dt>Languages &amp; tools</dt><dd>Python, Git, Postman, Figma</dd><dt>Fundamentals</dt><dd>Data structures, algorithms, DBMS, cryptography</dd></dl></div>
-</section>
-
-<section class="row" id="projects">
-  <h2>Projects</h2>
-  <div class="body"><div class="entry"><h3>Book Mate</h3><span class="when">Mobile app</span><div class="detail"><p>A book recommendation app.</p></div><ul><li>Cross-platform Flutter app with login, category selection and book detail screens.</li><li>Firebase Authentication for sign-in and the Google Books API for live book data.</li></ul><div class="stack">Flutter &middot; Dart &middot; Firebase &middot; Google Books API</div></div><div class="entry"><h3>Weather App</h3><span class="when">Web app</span><div class="detail"><p>Real-time weather for your location.</p></div><ul><li>React app that fetches live weather data from a REST API.</li><li>Validates API responses and keeps the UI consistent across states.</li></ul><div class="stack">React &middot; JavaScript &middot; REST API</div></div><div class="entry"><h3>Movie Database</h3><span class="when">Web app</span><div class="detail"><p>Browse and search movies.</p></div><ul><li>Responsive app with dynamic search and movie detail pages.</li><li>UI split into reusable React components fed by an external API.</li></ul><div class="stack">React &middot; JavaScript &middot; REST API &middot; HTML/CSS</div></div></div>
-</section>
-
-<section class="row" id="work">
-  <h2>Work</h2>
-  <div class="body"><div class="entry"><h3>Assistant Professor, Computer Science</h3><span class="when">Jan 2026 &ndash; now</span><div class="where">ECR Institute of Management Studies, Udupi &middot; affiliated to Mangalore University</div><ul><li>Teach Data Structures, DBMS, Python, Cryptography and Fundamentals of Data Science.</li><li>Run programming labs: review and debug student code, and show better solutions.</li><li>My top student scored 98/100 in Fundamentals of Data Science last semester.</li><li>Class advisor and mentor; exam duties and event coordination.</li></ul></div></div>
-</section>
-
-<section class="row" id="education">
-  <h2>Education</h2>
-  <div class="body"><div class="entry"><h3>M.Sc. Computer Science</h3><span class="when">2023 &ndash; 2025</span><div class="where">University of Kerala &middot; CGPA 8.0</div></div><div class="entry"><h3>Bachelor of Computer Applications</h3><span class="when">2020 &ndash; 2023</span><div class="where">University of Calicut &middot; CGPA 7.2</div></div></div>
-</section>
-
-<section class="contact" id="contact">
-  <h2>Let's talk<br><a href="mailto:mejigeorge2002@gmail.com">mejigeorge2002@gmail.com</a></h2>
-  <p>Open to software engineering roles.</p>
-  <div class="links">
-    <a href="https://www.linkedin.com/in/meji-a-g-a272aa200/" target="_blank" rel="noopener">LinkedIn</a>
-    <a href="tel:+917736668497">+91 77366 68497</a>
+<section class="section" id="about">
+  <div class="container about-grid reveal">
+    <div><p class="eyebrow">About</p><h2>Screen, API, data.</h2></div>
+    <div class="about-body">
+      <p>I enjoy the whole journey of an app: the screen someone taps, the API call behind it, and the data it ends up in.</p>
+      <p>I've built a Flutter mobile app and two React web apps. I also teach Data Structures, DBMS and Python as an Assistant Professor, so I spend a lot of time reading other people's code and explaining why one solution is cleaner than another.</p>
+    </div>
   </div>
 </section>
 
-<footer><span>&copy; <span class="year"></span> Meji A G</span><span>Thrissur, Kerala</span></footer>
-</div>
-<script src="../assets/site.js"></script>
+<section class="section section-tint" id="stack">
+  <div class="container">
+    <div class="section-head reveal"><p class="eyebrow">Stack</p><h2>What I use</h2></div>
+    <div class="skills-grid">
+      <article class="card skill-card reveal"><h3><span class="dot"></span>Web</h3><ul class="skill-list"><li><span>React, JavaScript, HTML, CSS</span></li></ul></article>
+      <article class="card skill-card reveal"><h3><span class="dot"></span>Mobile</h3><ul class="skill-list"><li><span>Flutter, Dart</span></li></ul></article>
+      <article class="card skill-card reveal"><h3><span class="dot"></span>Backend and data</h3><ul class="skill-list"><li><span>REST APIs, Firebase Authentication, PostgreSQL, SQL, Hive</span></li></ul></article>
+      <article class="card skill-card reveal"><h3><span class="dot"></span>Languages and tools</h3><ul class="skill-list"><li><span>Python, Git, Postman, Figma</span></li></ul></article>
+      <article class="card skill-card reveal"><h3><span class="dot"></span>Fundamentals</h3><ul class="skill-list"><li><span>Data structures, algorithms, DBMS, cryptography</span></li></ul></article>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="projects">
+  <div class="container">
+    <div class="section-head reveal"><p class="eyebrow">Projects</p><h2>Selected work</h2></div>
+    <div class="project-grid">
+      <article class="card project-card reveal">
+        <div class="cover"><div class="mock mock-phone" aria-hidden="true"><b></b><div class="mock-screen"><em></em><i></i><i class="short"></i><div class="mock-tiles"><span></span><span></span></div></div></div><span class="type">Mobile app</span></div>
+        <div class="project-body"><h3>Book Mate</h3><p>Cross-platform Flutter app with login, category selection and book detail screens. Firebase Authentication for sign-in and the Google Books API for live book data.</p><div class="tags"><span class="tag">Flutter</span><span class="tag">Dart</span><span class="tag">Firebase</span><span class="tag">Google Books API</span></div></div>
+      </article>
+      <article class="card project-card reveal">
+        <div class="cover"><div class="mock mock-browser" aria-hidden="true"><div class="mock-bar"><span></span><span></span><span></span></div><div class="mock-screen"><em></em><i></i><i class="short"></i></div></div><span class="type">Web app</span></div>
+        <div class="project-body"><h3>Weather App</h3><p>React app that fetches live weather from a REST API, validates responses, and keeps the UI consistent across states.</p><div class="tags"><span class="tag">React</span><span class="tag">JavaScript</span><span class="tag">REST API</span></div></div>
+      </article>
+      <article class="card project-card reveal">
+        <div class="cover"><div class="mock mock-browser" aria-hidden="true"><div class="mock-bar"><span></span><span></span><span></span></div><div class="mock-screen"><em></em><i></i><i class="short"></i><div class="mock-tiles"><span></span><span></span><span></span></div></div></div><span class="type">Web app</span></div>
+        <div class="project-body"><h3>Movie Database</h3><p>Responsive app with dynamic search and movie detail pages. UI split into reusable React components fed by an external API.</p><div class="tags"><span class="tag">React</span><span class="tag">JavaScript</span><span class="tag">REST API</span><span class="tag">HTML/CSS</span></div></div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="section section-tint" id="work">
+  <div class="container">
+    <div class="section-head reveal"><p class="eyebrow">Work</p><h2>Current role</h2></div>
+    <ol class="timeline">
+      <li class="tl-item reveal"><article class="card tl-card">
+        <div class="tl-top"><h3>Assistant Professor, Computer Science</h3><span class="dates">Jan 2026 – now</span></div>
+        <p class="org"><strong>ECR Institute of Management Studies, Udupi</strong> · Affiliated to Mangalore University</p>
+        <ul>
+          <li>Teach Data Structures, DBMS, Python, Cryptography and Fundamentals of Data Science.</li>
+          <li>Run programming labs: review and debug student code, and show better solutions.</li>
+          <li>Top student scored 98/100 in Fundamentals of Data Science last semester.</li>
+          <li>Class advisor and mentor; exam duties and event coordination.</li>
+        </ul>
+      </article></li>
+    </ol>
+  </div>
+</section>
+
+<section class="section" id="education">
+  <div class="container">
+    <div class="section-head reveal"><p class="eyebrow">Education</p><h2>Academic qualifications</h2></div>
+    <div class="stack">
+      <article class="card edu-card reveal"><h3>M.Sc. Computer Science</h3><span class="when">2023 – 2025</span><p class="sub">University of Kerala · CGPA 8.0</p></article>
+      <article class="card edu-card reveal"><h3>Bachelor of Computer Applications</h3><span class="when">2020 – 2023</span><p class="sub">University of Calicut · CGPA 7.2</p></article>
+    </div>
+  </div>
+</section>
+
+<section class="section section-tint" id="contact">
+  <div class="container contact-grid">
+    <div class="contact-info reveal">
+      <p class="eyebrow">Contact</p>
+      <h2>Let's talk.</h2>
+      <p>Open to software engineering roles.</p>
+      <ul class="contact-list">
+        <li><span class="ci"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg></span><div><small>Email</small><a href="mailto:mejigeorge2002@gmail.com">mejigeorge2002@gmail.com</a></div></li>
+        <li><span class="ci"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.45 20.45h-3.55v-5.57c0-1.33-.03-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 1 1 0-4.13 2.06 2.06 0 0 1 0 4.13zM7.12 20.45H3.56V9h3.56v11.45z"/></svg></span><div><small>LinkedIn</small><a href="https://www.linkedin.com/in/meji-a-g-a272aa200/" target="_blank" rel="noopener">LinkedIn</a></div></li>
+        <li><span class="ci"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.01l-2.2 2.2z"/></svg></span><div><small>Phone</small><a href="tel:+917736668497">+91 77366 68497</a></div></li>
+      </ul>
+      <div class="resume-list"><a href="Meji_A_G_Software_Engineer_Resume.pdf" download>Download resume</a></div>
+    </div>
+    <form class="contact-form card" id="contact-form" data-email="mejigeorge2002@gmail.com" novalidate>
+      <div class="field"><label for="f-name">Name</label><input id="f-name" name="name" type="text" required><p class="error" id="e-name"></p></div>
+      <div class="field"><label for="f-email">Email</label><input id="f-email" name="email" type="email" required><p class="error" id="e-email"></p></div>
+      <div class="field"><label for="f-subject">Subject</label><input id="f-subject" name="subject" type="text" required><p class="error" id="e-subject"></p></div>
+      <div class="field"><label for="f-message">Message</label><textarea id="f-message" name="message" rows="5" required></textarea><p class="error" id="e-message"></p></div>
+      <button class="btn btn-primary btn-block" type="submit">Send message</button>
+      <p class="form-status" id="form-status" role="status"></p>
+    </form>
+  </div>
+</section>
+</main>
+<footer class="footer"><div class="container footer-inner"><span>&copy; <span id="year"></span> Meji A G</span><a href="#top">Back to top &uarr;</a></div></footer>
+<script src="../assets/chrome.js"></script>
 </body>
 </html>

@@ -1,41 +1,129 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" data-theme="light">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Meji A G</title>
+<title>Meji A G | Teaching · QA · Software Engineering</title>
 <meta name="description" content="Meji A G: Computer Science lecturer, QA tester and software engineer from Thrissur, Kerala.">
 <meta property="og:title" content="Meji A G">
 <meta property="og:description" content="Meji A G: Computer Science lecturer, QA tester and software engineer from Thrissur, Kerala.">
 <meta property="og:image" content="assets/img/meji.jpg">
+<meta name="theme-color" content="#0b1b36">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;600&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="assets/style.css">
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/styles.css">
 </head>
-<body data-role="teach">
-<div class="page">
-
-<header class="top">
-  <a class="name" href="./">Meji A G</a>
-  <nav><a class="keep" href="mailto:mejigeorge2002@gmail.com">Email</a><a class="keep" href="https://www.linkedin.com/in/meji-a-g-a272aa200/" target="_blank" rel="noopener">LinkedIn</a></nav>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="nav" id="top">
+  <div class="container nav-inner">
+    <a class="brand" href="#top" aria-label="Meji A G, back to top"><span class="brand-mark">M</span>Meji A G</a>
+    <nav aria-label="Primary">
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#focus">Portfolios</a></li>
+        <li><a href="teaching/">Teaching</a></li>
+        <li><a href="qa/">QA</a></li>
+        <li><a href="software-engineer/">Software</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="nav-actions">
+      <button class="icon-btn" id="theme-toggle" type="button" aria-label="Switch to dark mode">
+        <svg class="sun" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 7a5 5 0 1 0 0 10 5 5 0 0 0 0-10zM2 13h2a1 1 0 0 0 0-2H2a1 1 0 0 0 0 2zm18 0h2a1 1 0 0 0 0-2h-2a1 1 0 0 0 0 2zM11 2v2a1 1 0 0 0 2 0V2a1 1 0 0 0-2 0zm0 18v2a1 1 0 0 0 2 0v-2a1 1 0 0 0-2 0zM5.99 4.58a1 1 0 0 0-1.41 1.41l1.06 1.06a1 1 0 0 0 1.41-1.41L5.99 4.58zm12.37 12.37a1 1 0 0 0-1.41 1.41l1.06 1.06a1 1 0 0 0 1.41-1.41l-1.06-1.06zm1.06-10.96a1 1 0 0 0-1.41-1.41l-1.06 1.06a1 1 0 0 0 1.41 1.41l1.06-1.06zM7.05 18.36a1 1 0 0 0-1.41-1.41l-1.06 1.06a1 1 0 0 0 1.41 1.41l1.06-1.06z"/></svg>
+        <svg class="moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3a9 9 0 1 0 9 9c0-.46-.04-.92-.1-1.36a5.39 5.39 0 0 1-4.4 2.26 5.4 5.4 0 0 1-3.14-9.8c-.44-.06-.9-.1-1.36-.1z"/></svg>
+      </button>
+      <button class="icon-btn menu-btn" id="menu-btn" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="nav-links">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+      </button>
+    </div>
+  </div>
 </header>
-<section class="landing">
-  <figure><img src="assets/img/meji-walk.jpg" alt="Meji A G walking along a tree-lined road" width="960" height="1200"></figure>
-  <div>
-    <div class="role-line">Thrissur, Kerala</div>
-    <h1>Hello, I'm <i>Meji.</i></h1>
-    <p class="say">I teach computer science, I build apps, and I test them. Pick the side of me you'd like to see.</p>
-    <div class="paths">
-      <a href="teaching/"><b>Teaching</b><span>Assistant Professor, Computer Science</span><em>&rarr;</em></a>
-      <a href="qa/"><b>QA &amp; testing</b><span>Manual testing, test cases, Postman</span><em>&rarr;</em></a>
-      <a href="software-engineer/"><b>Software engineering</b><span>React, Flutter, Python</span><em>&rarr;</em></a>
+<main id="main">
+<section class="hero">
+  <div class="container hero-grid">
+    <div class="hero-copy">
+      <p class="availability"><span class="pulse" aria-hidden="true"></span>Thrissur, Kerala · Open to relevant opportunities</p>
+      <h1>Hello, I'm Meji.<br><span>Pick a side.</span></h1>
+      <p class="hero-sub">I teach computer science, I build apps, and I test them. Same person, three portfolios.</p>
+      <div class="hero-ctas">
+        <a class="btn btn-primary" href="#focus">View portfolios</a>
+        <a class="btn btn-outline" href="#contact">Contact</a>
+      </div>
+    </div>
+    <div class="hero-photo">
+      <div class="photo-frame">
+        <img src="assets/img/meji.jpg" alt="Portrait of Meji A G" width="960" height="1200">
+      </div>
+      <div class="photo-card">
+        <strong>Meji A G</strong>
+        <span>M.Sc. Computer Science · Thrissur, Kerala</span>
+      </div>
     </div>
   </div>
 </section>
 
-<footer><span>&copy; <span class="year"></span> Meji A G</span><span>Thrissur, Kerala</span></footer>
-</div>
-<script src="assets/site.js"></script>
+<section class="section section-tint" id="focus">
+  <div class="container">
+    <div class="section-head reveal">
+      <p class="eyebrow">Portfolios</p>
+      <h2>One foundation, three directions.</h2>
+      <p>Teaching is the current role. QA and software engineering are the directions I am open to.</p>
+    </div>
+    <div class="focus-grid">
+      <article class="card focus-card reveal" data-id="teaching">
+        <span class="status current">Current role</span>
+        <h3>Assistant Professor</h3>
+        <p>Teaching Computer Science to BCA students: theory, programming labs, mentoring and class advising.</p>
+        <div class="tags"><span class="tag">DBMS</span><span class="tag">Python</span><span class="tag">Data Structures</span><span class="tag">Data Science</span></div>
+        <p class="highlight">Top student score of 98/100 in Fundamentals of Data Science.</p>
+        <a class="btn btn-outline" href="teaching/">Open teaching portfolio &rarr;</a>
+      </article>
+      <article class="card focus-card reveal" data-id="qa">
+        <span class="status open">Open to opportunities</span>
+        <h3>QA Engineer</h3>
+        <p>Test cases, end-to-end flows, API checks in Postman, and data checks with SQL.</p>
+        <div class="tags"><span class="tag">Manual testing</span><span class="tag">Postman</span><span class="tag">SQL</span><span class="tag">Bug reporting</span></div>
+        <p class="highlight">Three apps tested end to end, including Firebase and REST APIs.</p>
+        <a class="btn btn-outline" href="qa/">Open QA portfolio &rarr;</a>
+      </article>
+      <article class="card focus-card reveal" data-id="swe">
+        <span class="status open">Open to opportunities</span>
+        <h3>Software Engineer</h3>
+        <p>Web and mobile apps with React and Flutter, REST APIs, Firebase, and PostgreSQL.</p>
+        <div class="tags"><span class="tag">React</span><span class="tag">Flutter</span><span class="tag">Python</span><span class="tag">PostgreSQL</span></div>
+        <p class="highlight">One Flutter app and two React web apps.</p>
+        <a class="btn btn-outline" href="software-engineer/">Open software portfolio &rarr;</a>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="contact">
+  <div class="container contact-grid">
+    <div class="contact-info reveal">
+      <p class="eyebrow">Contact</p>
+      <h2>Let's connect.</h2>
+      <p>Academic institutions, recruiters and software teams can reach me here.</p>
+      <ul class="contact-list">
+        <li><span class="ci"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg></span><div><small>Email</small><a href="mailto:mejigeorge2002@gmail.com">mejigeorge2002@gmail.com</a></div></li>
+        <li><span class="ci"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.45 20.45h-3.55v-5.57c0-1.33-.03-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 1 1 0-4.13 2.06 2.06 0 0 1 0 4.13zM7.12 20.45H3.56V9h3.56v11.45z"/></svg></span><div><small>LinkedIn</small><a href="https://www.linkedin.com/in/meji-a-g-a272aa200/" target="_blank" rel="noopener">linkedin.com/in/meji-a-g</a></div></li>
+        <li><span class="ci"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.01l-2.2 2.2z"/></svg></span><div><small>Phone</small><a href="tel:+917736668497">+91 77366 68497</a></div></li>
+        <li><span class="ci"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5a2.5 2.5 0 1 1 0-5 2.5 2.5 0 0 1 0 5z"/></svg></span><div><small>Location</small><span class="v">Thrissur, Kerala</span></div></li>
+      </ul>
+    </div>
+    <form class="contact-form card" id="contact-form" data-email="mejigeorge2002@gmail.com" novalidate>
+      <div class="field"><label for="f-name">Name</label><input id="f-name" name="name" type="text" autocomplete="name" required><p class="error" id="e-name"></p></div>
+      <div class="field"><label for="f-email">Email</label><input id="f-email" name="email" type="email" autocomplete="email" required><p class="error" id="e-email"></p></div>
+      <div class="field"><label for="f-subject">Subject</label><input id="f-subject" name="subject" type="text" required><p class="error" id="e-subject"></p></div>
+      <div class="field"><label for="f-message">Message</label><textarea id="f-message" name="message" rows="5" required></textarea><p class="error" id="e-message"></p></div>
+      <button class="btn btn-primary btn-block" type="submit">Send message</button>
+      <p class="form-status" id="form-status" role="status" aria-live="polite"></p>
+    </form>
+  </div>
+</section>
+</main>
+<footer class="footer"><div class="container footer-inner"><span>&copy; <span id="year"></span> Meji A G</span><a href="#top">Back to top &uarr;</a></div></footer>
+<script src="assets/chrome.js"></script>
 </body>
 </html>
